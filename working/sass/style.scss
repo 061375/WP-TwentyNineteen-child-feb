@@ -1,0 +1,51 @@
+/*
+ Theme Name:   Twenty Nineteen February
+ Description:  Twenty Nineteen Child Theme
+ Author:       Jeremy Heminger
+ Author URI:   http://jeremyheminger.com
+ Template:     twentynineteen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twentynineteen-february
+*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400');
+@import "normalize";
+@import "mixins";
+@import "colors";
+@import "typography";
+@import "grid";
+@import "header";
+@import "main";
+@import "footer";
+
+/* GENERAL */
+
+body {
+	margin: 0;
+	min-height: 100vh;
+	font-family: 'Montserrat', sans-serif;
+	color: #444;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7abcff+0,60abf8+44,4096ee+100;Blue+3D+%2314 */
+	background: rgb(122,188,255); /* Old browsers */
+	background: -moz-linear-gradient(45deg, rgba(122,188,255,1) 0%, rgba(96,171,248,1) 44%, rgba(64,150,238,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg, rgba(122,188,255,1) 0%,rgba(96,171,248,1) 44%,rgba(64,150,238,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg, rgba(122,188,255,1) 0%,rgba(96,171,248,1) 44%,rgba(64,150,238,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+#page {
+	width: 100vw;
+} 
+
+header,
+main,
+aside,
+footer {
+ 	padding: 1em 2em;
+}
+
+
+
+

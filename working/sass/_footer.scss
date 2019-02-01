@@ -1,0 +1,12 @@
+footer { 
+	background: $headergrey; 
+	&.entry-footer {
+		font-size: 0.5em;
+		svg,
+		time,
+		span {
+			margin-right: 10px;
+		}
+	}
+	margin-bottom: 100px;
+}

@@ -1,0 +1,518 @@
+/*
+ Theme Name:   Twenty Nineteen February
+ Description:  Twenty Nineteen Child Theme
+ Author:       Jeremy Heminger
+ Author URI:   http://jeremyheminger.com
+ Template:     twentynineteen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twentynineteen-february
+*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,300,400");
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+/* line 11, working/sass/_normalize.scss */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+/* line 23, working/sass/_normalize.scss */
+body {
+  margin: 0; }
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+/* line 31, working/sass/_normalize.scss */
+main {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+/* line 40, working/sass/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+/* line 53, working/sass/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 64, working/sass/_normalize.scss */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+/* line 76, working/sass/_normalize.scss */
+a {
+  background-color: transparent; }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+/* line 85, working/sass/_normalize.scss */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+/* line 95, working/sass/_normalize.scss */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 105, working/sass/_normalize.scss */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+/* line 116, working/sass/_normalize.scss */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+/* line 125, working/sass/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 133, working/sass/_normalize.scss */
+sub {
+  bottom: -0.25em; }
+
+/* line 137, working/sass/_normalize.scss */
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+/* line 148, working/sass/_normalize.scss */
+img {
+  border-style: none; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+/* line 160, working/sass/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+/* line 176, working/sass/_normalize.scss */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+/* line 186, working/sass/_normalize.scss */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+/* line 195, working/sass/_normalize.scss */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+/* line 206, working/sass/_normalize.scss */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+/* line 218, working/sass/_normalize.scss */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+/* line 229, working/sass/_normalize.scss */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+/* line 240, working/sass/_normalize.scss */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+/* line 253, working/sass/_normalize.scss */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+/* line 261, working/sass/_normalize.scss */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+/* line 270, working/sass/_normalize.scss */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+/* line 280, working/sass/_normalize.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+/* line 290, working/sass/_normalize.scss */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+/* line 299, working/sass/_normalize.scss */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+/* line 308, working/sass/_normalize.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+/* line 320, working/sass/_normalize.scss */
+details {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+/* line 328, working/sass/_normalize.scss */
+summary {
+  display: list-item; }
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+/* line 339, working/sass/_normalize.scss */
+template {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10.
+ */
+/* line 347, working/sass/_normalize.scss */
+[hidden] {
+  display: none; }
+
+/** 
+ * Some common mixins
+ * */
+/**  
+ * a wrapper for transitions
+ * @param string $s a float point number in second(s) - default .6s
+ * */
+/** 
+ * media query break wrapper
+ * @param string $width - 768px
+ * */
+/** 
+ * wrapper to export common browser prefix for backward compatability
+ * @param array $declarations the list of styles
+ * @param list $prefixes list of prefixes to use
+ * */
+/** 
+ * wrapper for keyframe animations
+ * @param string name of the animation
+ * */
+/** 
+ * force not allow mouse selection of wrapped text
+ * */
+/* line 4, working/sass/_typography.scss */
+h1 {
+  font-size: 3em;
+  margin: 0.27em 0; }
+
+/* line 9, working/sass/_typography.scss */
+a {
+  text-decoration: none; }
+
+/*
+#page {
+ 	display: grid;
+ 	grid-template-columns:
+ 		15em 
+ 		minmax(400px, 100%) 
+		minmax(200px, 60%)
+		15em;
+ }
+ header,
+ footer {
+ 	grid-column: 1 / 5;
+ 	aside {
+ 		grid-column: none;
+ 	}
+ }
+
+ main {
+ 	grid-column: 2 / 3;
+ }
+
+ aside {
+ 	grid-column: 3 / 4;
+ }
+*/
+/* line 34, working/sass/_grid.scss */
+#page {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: "header header header" ". main ." ". side ." "footer footer footer"; }
+  @media only screen and (min-width: 768px) {
+    /* line 34, working/sass/_grid.scss */
+    #page {
+      grid-template-columns: 0em auto auto 0em;
+      grid-template-areas: "header header header header" ". main side ." "footer footer footer footer"; } }
+  @media screen and (max-width: 1280px) {
+    /* line 34, working/sass/_grid.scss */
+    #page {
+      grid-template-columns: 0em auto auto 0em; } }
+
+/* line 55, working/sass/_grid.scss */
+header aside,
+footer aside {
+  grid-area: none; }
+
+/* line 59, working/sass/_grid.scss */
+header {
+  grid-area: header; }
+
+/* line 62, working/sass/_grid.scss */
+footer {
+  grid-area: footer; }
+
+/* line 65, working/sass/_grid.scss */
+main {
+  grid-area: main; }
+
+/* line 68, working/sass/_grid.scss */
+aside {
+  grid-area: side; }
+
+/* line 73, working/sass/_grid.scss */
+article header,
+article footer {
+  grid-area: none; }
+
+/* line 1, working/sass/_header.scss */
+header {
+  color: #ffffff; }
+  /* line 4, working/sass/_header.scss */
+  header a {
+    color: #ffffff; }
+  /* line 7, working/sass/_header.scss */
+  header p {
+    padding: 0 0 0 10%; }
+
+/* line 11, working/sass/_header.scss */
+#main header {
+  background: #fdfdfd;
+  padding: 10px 0 0 0; }
+  /* line 14, working/sass/_header.scss */
+  #main header a {
+    color: #444; }
+
+/* line 5, working/sass/_main.scss */
+main {
+  background: #fdfdfd; }
+
+/* line 8, working/sass/_main.scss */
+aside {
+  background: #f7f7f7; }
+
+/* line 1, working/sass/_footer.scss */
+footer {
+  background: #f7f7f7;
+  margin-bottom: 100px; }
+  /* line 3, working/sass/_footer.scss */
+  footer.entry-footer {
+    font-size: 0.5em; }
+    /* line 5, working/sass/_footer.scss */
+    footer.entry-footer svg,
+    footer.entry-footer time,
+    footer.entry-footer span {
+      margin-right: 10px; }
+
+/* GENERAL */
+/* line 25, working/sass/style.scss */
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  color: #444;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7abcff+0,60abf8+44,4096ee+100;Blue+3D+%2314 */
+  background: #7abcff;
+  /* Old browsers */
+  background: -moz-linear-gradient(45deg, #7abcff 0%, #60abf8 44%, #4096ee 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #7abcff 0%, #60abf8 44%, #4096ee 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #7abcff 0%, #60abf8 44%, #4096ee 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */ }
+
+/* line 38, working/sass/style.scss */
+#page {
+  width: 100vw; }
+
+/* line 42, working/sass/style.scss */
+header,
+main,
+aside,
+footer {
+  padding: 1em 2em; }

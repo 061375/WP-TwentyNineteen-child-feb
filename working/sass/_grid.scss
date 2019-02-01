@@ -1,0 +1,77 @@
+
+// LEGACY GRID
+
+/*
+#page {
+ 	display: grid;
+ 	grid-template-columns:
+ 		15em 
+ 		minmax(400px, 100%) 
+		minmax(200px, 60%)
+		15em;
+ }
+ header,
+ footer {
+ 	grid-column: 1 / 5;
+ 	aside {
+ 		grid-column: none;
+ 	}
+ }
+
+ main {
+ 	grid-column: 2 / 3;
+ }
+
+ aside {
+ 	grid-column: 3 / 4;
+ }
+*/
+
+
+// MODERN GRID-AREA
+
+
+#page {
+ 	display: grid;
+ 	grid-template-columns: auto;
+	grid-template-areas:
+ 		"header header header"
+ 		". main ."
+ 		". side ."
+ 		"footer footer footer";
+ 	@include breakmin() {
+ 		grid-template-columns: 0em auto auto 0em;
+ 		grid-template-areas:
+	 		"header header header header"
+	 		". main side ."
+	 		"footer footer footer footer";
+ 	}
+ 	@include break(1280px) {
+ 		grid-template-columns: 0em auto auto 0em;
+ 	}
+ }
+ header,
+ footer {
+ 	aside {
+ 		grid-area: none;
+ 	}
+ }
+ header {
+ 	grid-area: header;
+ }
+ footer {
+ 	grid-area: footer;
+ }
+ main {
+ 	grid-area: main;
+ }
+ aside {
+ 	grid-area: side;
+ }
+
+ article {
+ 	header,
+ 	footer {
+ 		grid-area: none;
+ 	}
+ }

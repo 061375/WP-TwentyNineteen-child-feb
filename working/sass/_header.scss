@@ -1,0 +1,17 @@
+header { 
+	//background: $headergrey; 
+	color: $white;
+	a {
+		color: $white;
+	}
+	p {
+		padding: 0 0 0 10%;
+	}
+}
+#main header {
+		background: $offwhite;
+		padding: 10px 0 0 0;
+		a {
+			color: $text;
+		}
+	}
