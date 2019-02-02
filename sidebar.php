@@ -15,6 +15,5 @@ if ( ! is_active_sidebar( 'sidebar-2' ) ) {
 }
 ?>
 
-<aside id="secondary" class="widget-area" role="complementary" aria-label="<?php esc_attr_e( 'Blog Sidebar', 'twentynineteen' ); ?>">
-	<?php get_template_part( 'template-parts/sidebar/sidebar', 'widgets' ); ?>
-</aside><!-- #secondary -->
+<?php get_template_part( 'template-parts/sidebar/sidebar', 'widgets' ); ?>
+
